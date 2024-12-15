@@ -47,6 +47,11 @@ library originally built on [Ray](https://github.com/ray-project/ray), but has
 a more modular way, that allows it to also use Dask as a scheduler, or replace the
 pandas-like public API by a SQLite-like one.
 
+[Xorbits](https://github.com/xorbitsai/xorbits) is a scalable data science toolkit 
+to scale NumPy and pandas and to keep APIs compatibility with their original ones.
+It is somewhat similar to Dask as a task scheduler, but there are significant 
+differences in the implementation of the distributed engine compared to Dask or Modin.
+
 [cuDF](https://github.com/rapidsai/cudf) is a GPU dataframe library built on top
 of Apache Arrow and RAPIDS. It provides an API similar to pandas.
 
@@ -180,7 +185,7 @@ The list of known Python dataframe libraries at the time of writing this documen
 - [Grizzly](https://github.com/weld-project/weld#grizzly)
 - [Ibis](https://ibis-project.org/)
 - [Koalas](https://github.com/databricks/koalas)
-- [Mars](https://docs.pymars.org/en/latest/)
+- [Xorbits](https://github.com/xorbitsai/xorbits)
 - [Modin](https://github.com/modin-project/modin)
 - [pandas](https://pandas.pydata.org/)
 - [polars](https://www.pola.rs/)
@@ -209,7 +214,7 @@ Authors of libraries that provide functionality used by dataframes.
 A non-exhaustive list of upstream categories is next:
 
 - Data formats, protocols and libraries for data analytics (e.g. Apache Arrow, NumPy)
-- Task schedulers (e.g. Dask, Ray, Mars)
+- Task schedulers (e.g. Dask, Ray, Xorbits)
 - Big data systems (e.g. Spark, Hive, Impala, Presto)
 - Libraries for database access (e.g. SQLAlchemy)
 
